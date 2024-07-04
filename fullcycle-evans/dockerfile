@@ -1,0 +1,7 @@
+$ docker run --rm -v "$(pwd):/mount:ro" \
+    ghcr.io/ktr0731/evans:latest \
+      --path ./proto/files \
+      --proto file-name.proto \
+      --host example.com \
+      --port 50051 \
+      repl
